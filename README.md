@@ -1,4 +1,4 @@
-# Bitcoin_MA_Cross_Linebot
+# Bitcoin_MA_Cross_LineBot
 
 1小時級別比特幣5MA-60MA均線交叉策略，於交叉時會透過LineBot提醒，請自行於Heroku Scheduler中設定每小時執行一次MA_Cross.py。
 
