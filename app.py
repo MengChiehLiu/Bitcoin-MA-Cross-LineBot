@@ -29,7 +29,7 @@ def callback():
 def function():
     # get price from binance api
     client = Client()
-    klines = client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_4HOUR, "two week ago")   #次處可自行更改時間級別
+    klines = client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_4HOUR, "two week ago")
 
     # function to calculate sma value
     def sma(n):
