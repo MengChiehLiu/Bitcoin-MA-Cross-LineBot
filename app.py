@@ -32,7 +32,6 @@ def function():
     # get price from binance api
     client = Client()
     klines = client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_4HOUR, "two week ago")
-    dropdown = client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_15MINUTE, "15m ago")[0]
 
     # function to calculate sma value
     def sma(n):
@@ -49,12 +48,6 @@ def function():
     # calculate previous sma 5 and 60
     psma60 = prev_sma(60)
     psma5 = prev_sma(5)
-
-    # dropdown alert
-    open_price = float(dropdown[1])
-    now_price = float(dropdown[4])
-    if (open_price - now_price) >= 500:
-        line_bot_api.push_message(MyUID, TextSendMessage(text='Alert!!! Big Dropdown!'))
 
     # golden cross
     if sma5 > sma60 and psma5 < psma60:
