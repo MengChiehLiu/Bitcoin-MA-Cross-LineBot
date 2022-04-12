@@ -3,7 +3,7 @@
 
 ##  佈署教學
 
-1. 參考下列文章建立LineBot並佈署上Heroku。
+1. 創建LineBot並佈署上Heroku。
 LineBot 參考教學: https://github.com/hsuanchi/Flask-LINE-Bot-Heroku
 2. 將你的 Channel access token 以及 Channel secret 輸入程式當中。
 3. 先佈署一次程式。
