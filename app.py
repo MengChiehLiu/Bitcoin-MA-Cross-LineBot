@@ -4,9 +4,9 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
-line_bot_api = LineBotApi("") # 輸入自己的
-handler = WebhookHandler("")  # 輸入自己的
-MyUID = ""                    # 輸入自己的
+line_bot_api = LineBotApi("") # 輸入自己的 Channel access token
+handler = WebhookHandler("")  # 輸入自己的 Channel secret
+MyUID = ""                    # 輸入自己的 UID
 
 
 app=Flask(__name__)
