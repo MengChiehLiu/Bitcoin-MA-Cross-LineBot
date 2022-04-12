@@ -1,4 +1,4 @@
-# Bitcoin_MA_Cross_LineBot
+# Bitcoin MA Cross LineBot
 4小時級別比特幣5MA-60MA均線交叉策略，於交叉時會透過LineBot提醒。
 
 ##  佈署教學
